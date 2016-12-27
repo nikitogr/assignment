@@ -81,7 +81,14 @@ public class SB extends JFrame implements ActionListener {
 		JButton btnNewButton = new JButton("New Records");
 		btnNewButton.setBounds(158, 124, 120, 30);
 		contentPane.add(btnNewButton);
-		btnNewButton.addActionListener(this);
+		btnNewButton.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent b){
+				
+				dispose();
+				Recordswrite thirdframe = new Recordswrite();
+				thirdframe.setVisible(true);
+			}
+		});
 		
 		JButton btnNewButton_1 = new JButton("Open Records");
 		btnNewButton_1.setBounds(158, 166, 120, 30);
@@ -90,25 +97,19 @@ public class SB extends JFrame implements ActionListener {
 		JButton btnNewButton_2 = new JButton("Logout");
 		btnNewButton_2.setBounds(338, 237, 89, 23);
 		contentPane.add(btnNewButton_2);
-		btnNewButton_2.addActionListener(this);
-	}
-		
-	public void actionPerformed(ActionEvent click) //added click event as I have multiple sources meaning buttons
-
-	{
-		Object source = click.getSource(); //Anything below that is triggered by a click, will do that	
-		
-				if (source==btnNewButton_2) //if logout btn is pressed, close this frame and get the first one, the login page
-				{
-					sbframe.dispose();
-					StartPage firstframe= new StartPage();
-					firstframe.setVisible(true);
-				}	
-					if(source==btnNewButton)
-					{
-						dispose();
-						Recordswrite thirdframe = new Recordswrite();
-						thirdframe.setVisible(true);
-					}
+		btnNewButton_2.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent a){
+				dispose();
+				StartPage firstframe= new StartPage();
+				firstframe.setVisible(true);
 			}
+		});
+	}
+
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
 }
