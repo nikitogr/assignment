@@ -90,7 +90,7 @@ public class SB extends JFrame implements ActionListener {
 		JButton btnNewButton_2 = new JButton("Logout");
 		btnNewButton_2.setBounds(338, 237, 89, 23);
 		contentPane.add(btnNewButton_2);
-		btnNewButton_2.addActionListener(instance);
+		btnNewButton_2.addActionListener(this);
 	}
 		
 	public void actionPerformed(ActionEvent click) //added click event as I have multiple sources meaning buttons
