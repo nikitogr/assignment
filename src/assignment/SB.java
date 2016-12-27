@@ -39,7 +39,7 @@ public class SB extends JFrame implements ActionListener {
 	
 	//This is the main program. It sets class SB frame named 'sbframe' to visible.
 	/**
-	 * Launch the application..
+	 * Launch the application...
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {

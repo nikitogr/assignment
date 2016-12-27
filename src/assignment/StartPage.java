@@ -51,7 +51,7 @@ public class StartPage extends JFrame {
 	}
 
 	/**
-	 * Create the frame...
+	 * Create the frame....
 	 */
 	public StartPage() {
 		setResizable(false);
