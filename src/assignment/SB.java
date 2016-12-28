@@ -23,13 +23,8 @@ import javax.swing.JButton;
 
 public class SB extends JFrame implements ActionListener {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 5183060913822208215L;
-	/**
-	 * 
-	 */
+
 	private JPanel contentPane; //Main Panel
 	static SB sbframe = new SB(); //I need only one instance of sbframe in the main
 	
