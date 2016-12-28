@@ -1,28 +1,21 @@
 package assignment;
 
-import java.awt.BorderLayout;
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 
-import java.awt.Font;
-import javax.swing.SwingConstants;
+
 import java.awt.Color;
-import java.awt.Toolkit;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.*;
+
 
 import javax.swing.ImageIcon;
-import java.awt.FlowLayout;
-import java.awt.CardLayout;
-import net.miginfocom.swing.MigLayout;
-import java.awt.GridBagLayout;
-import java.awt.GridBagConstraints;
 import javax.swing.JSeparator;
 import javax.swing.UIManager;
 import javax.swing.JButton;
@@ -33,8 +26,11 @@ public class SB extends JFrame implements ActionListener {
 	/**
 	 * 
 	 */
+	private static final long serialVersionUID = 5183060913822208215L;
+	/**
+	 * 
+	 */
 	private JPanel contentPane; //Main Panel
-	private JButton btnNewButton_2, btnNewButton; //variables
 	static SB sbframe = new SB(); //I need only one instance of sbframe in the main
 	
 	//This is the main program. It sets class SB frame named 'sbframe' to visible.
